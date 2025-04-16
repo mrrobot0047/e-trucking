@@ -1,146 +1,206 @@
-E-Trucking Platform Proposal
-Vision:
-The E-Trucking platform will connect truck owners/drivers with customers (employers) who need to ship goods. This service provides a seamless, efficient, and secure way for employers to find reliable drivers and track their deliveries in real-time.
 
-1️⃣ Users
-Truck Owners / Drivers:
 
-Provide transportation services.
+---
 
-Can accept or reject job offers from employers.
+# 🚛 E-Trucking Platform – Full User Flow (Built for Large Cargo Deliveries)
 
-Update job status (started, in progress, finished).
+A high-performance logistics platform built to **manage, match, and track large cargo deliveries** across Ethiopia and beyond. Whether you're a business moving freight, a driver with a heavy-duty truck, or a fleet operator, this system is designed to streamline operations, ensure trust, and handle **big loads** securely and efficiently.
 
-Upload required documents for KYC (driver’s license, truck details).
+---
 
-Receive payment after job completion.
+## 🌐 Multi-Language Support
 
-Customers (Employers):
+Accessible for a wide user base with three built-in languages:
 
-Require transportation for their goods.
+- 🇬🇧 **English** (Default)
+- 🇪🇹 **Amharic** *(አማርኛ)*
+- 🟢 **Afaan Oromoo**
 
-Post delivery requests with cargo details.
+Users can switch their preferred language anytime from the UI.
 
-Select drivers based on profile, ratings, and job history.
+---
 
-Track job status in real-time.
+## 📦 Target Audience & Use Case
 
-Make payments for completed jobs.
+> **This platform is specifically built for heavy cargo and large item logistics.**
 
-Rate and review the drivers.
+**Examples of use cases:**
 
-2️⃣ User Actions
-Employers (Customers)
-Post a delivery request with cargo details.
+- Construction equipment transport  
+- Commercial bulk goods delivery  
+- Factory-to-warehouse logistics  
+- Long-distance freight trucking  
+- Oversized agricultural machinery delivery  
 
-Browse available drivers.
+> Not intended for personal items, food delivery, or light cargo. This is **industrial-grade trucking software**.
 
-Select drivers based on profiles and ratings.
+---
 
-Track job status (via real-time GPS).
+## 📲 1. User Signup & Onboarding (Common Flow with OTP)
 
-Make payments through the platform.
+### Step 1: Basic Information
 
-Rate drivers after delivery.
+- Navigate to **Signup Page**
+- Select Language
+- Enter:
+  - Full Name
+  - Email Address
+  - Phone Number
+  - Secure Password
+- Select **Role**:
+  - Driver / Truck Owner
+  - Company
+  - Customer / Employer
 
-Drivers (Truck Owners)
-Browse and accept job listings.
+### Step 2: OTP Verification
 
-Upload necessary documents (driver’s license, truck details, selfie).
+- OTP is sent to phone/email
+- User enters OTP:
+  - ✅ Valid → Proceed
+  - ❌ Invalid → Error with “Resend” option  
+    - Max 3 attempts  
+    - Expires after 5 minutes  
 
-Update job status (on the way, delivered).
+### Step 3: Document Upload & Role-Specific Info
 
-Receive payment upon delivery completion.
+#### 🚚 Drivers / Truck Owners
+- Upload:
+  - Driver’s license
+  - Truck image
+  - License plate number
+  - Selfie
 
-Build a reputation through ratings.
+#### 🏢 Companies
+- Upload:
+  - Business registration
+  - Operational license
+- Add:
+  - Company name
+  - Logo
+  - Contact information
+- Optional: Add multiple drivers under fleet
 
-3️⃣ Key Pages / Screens
-Welcome Page: Introduction to the platform with a CTA to sign up or learn more.
+#### 👷 Customers / Employers
+- Upload:
+  - National ID or Business Certificate
+  - Proof of residence
 
-Signup & Login: Secure user registration and login process.
+> 🔒 AI-Based KYC Verification is triggered after document submission.
 
-Employer Dashboard: For employers to post jobs, track deliveries, and manage orders.
+### Step 4: Verification Outcome
 
-Driver Dashboard: For drivers to accept jobs, update status, and manage their profile.
+- ✅ Approved → **Verified Badge**
+- ❌ Rejected → Notification with resubmission steps
 
-Job Posting Page: Employers post their delivery requests.
+---
 
-Job Listings Page: Drivers browse available jobs.
+## 👥 2. User Roles & Flows
 
-Real-Time Tracking Page: GPS-based delivery tracking for employers.
+### A. Customers / Employers
 
-Profile Page: User profile displaying KYC data, documents, and job history.
+#### 🚛 Post a Heavy Cargo Job
+- Go to **Employer Dashboard**
+- Click **“Post a Job”**
+- Provide:
+  - Pickup & delivery locations
+  - Cargo details (weight, size, special requirements)
+  - Preferred date/time
+  - Budget & notes
+- Submit → Job is posted in the **Marketplace**
 
-Admin Panel: Admins can manage user accounts, approve/reject KYC, monitor disputes, and handle payments.
+#### 👀 Browse & Assign Driver
+- View driver profiles:
+  - Ratings, reviews, documents
+- Send offers or auto-assign
 
-Help Center: FAQ, customer support, and dispute resolution.
+#### 📍 Live Tracking
+- Track cargo movement via real-time GPS
 
-Terms & Privacy: Legal pages outlining terms of service and privacy policies.
+#### 💬 In-Platform Chat
+- Chat with the assigned driver
 
-404 / Offline Page: For page errors and no internet connectivity.
+#### ✅ Delivery Confirmation
+- Mark job as complete
+- Make payment via:
+  - Telebirr
+  - Bank transfer
+  - Escrow
 
-Report & Feedback: Page to submit issues, bugs, or feedback.
+#### ⭐ Ratings & Reviews
+- Rate the driver and experience
 
-4️⃣ Real-Time Features
-Real-Time Job Status Updates: Employers get instant updates when the driver starts, is on the way, arrives, and finishes delivery.
+---
 
-Instant Push/Email Notifications: Notifications for key updates, job acceptances, delivery status changes, and KYC status updates.
+### B. Drivers / Truck Owners
 
-5️⃣ Admin Panel Features
-Approve or Reject Driver/Customer KYC: Verify identity documents and approve users based on KYC data.
+#### 📋 Job Discovery & Acceptance
+- Use **Driver Dashboard** to browse posted jobs
+- View job details:
+  - Cargo weight & type
+  - Pickup/destination
+  - Budget
+- Accept or reject
 
-Manage User Accounts: View, edit, and deactivate user accounts (both employers and drivers).
+#### 🚛 Start & Complete Job
+- Tap **“Start Job”**
+- Update job status (In Progress → Delivered)
+- Upload **Proof of Delivery**
 
-Monitor Disputes: Track and resolve disputes, including damages and delays.
+#### 💰 Payment Handling
+- Wait for confirmation
+- Payment processed automatically
+- Build trust through ratings
 
-Manage Payments & Commissions: Admin can track payments, manage commissions, and ensure correct fees are applied.
+---
 
-Generate Reports: Admin can generate reports for performance, user activity, and revenue.
+### C. Companies (Fleet Operators)
 
-User & Content Moderation: Ensure quality by moderating reviews, feedback, and complaints.
+#### 📦 Bulk Job Posting
+- Post jobs as a business
+- Assign directly to company drivers
 
-6️⃣ Security Plan
-KYC (Know Your Customer) Verification: AI-powered verification for driver/customer IDs and documents to prevent fraud.
+#### 🧑‍🔧 Driver Management
+- Add/manage drivers under one company account
+- Monitor performance and history
 
-Verification Code (OTP): Use of one-time passwords for secure registration, login, and account recovery.
+#### 📊 Fleet Analytics
+- View dashboards:
+  - Live job tracking
+  - Success rates
+  - Delivery times
 
-Data Encryption: All user data and payment information encrypted with AES-256 for secure transactions and privacy.
+#### 💵 Bulk Payments
+- Pay multiple drivers from one control panel
 
-7️⃣ Monetization Model
-Commission Fees from Each Transaction: Platform takes a 15-20% commission from each job completed.
+---
 
-Premium Memberships for Verified Drivers: Verified drivers get premium status for better visibility and job opportunities.
+## 🔔 3. Notifications & Real-Time Features
 
-Featured Listings: Drivers can opt for featured listings (paid) to increase visibility on the platform.
+- Job status updates: Started, En Route, Completed
+- Push/Email Alerts:
+  - New jobs
+  - OTP codes
+  - KYC status
+  - Payment success/failure
 
-8️⃣ Development Timeline
-Phase 1: Planning & Design (Week 1-2):
+---
 
-Wireframing and UI design using Figma.
+## 🛠️ 4. Admin Panel (For Platform Operators)
 
-Finalize platform features and structure.
+### 📋 Admin Features
 
-Phase 2: Frontend Development (Week 2-5):
+- Secure login to **Admin Panel**
+- Manage users across all roles
+- Approve or reject KYC documents
+- View job histories & transaction logs
+- Handle disputes & feedback moderation
+- Track platform-wide commissions
+- Generate detailed reports
 
-Build frontend with React.js and Tailwind CSS.
+---
 
-Implement pages for job posting, listings, dashboards, and real-time tracking.
+## 🚀 Summary
 
-Phase 3: Backend Development (Week 4-7):
+> The E-Trucking Platform is the **backbone for big load logistics** — merging powerful role management, real-time tracking, KYC security, and multi-language access to create Ethiopia’s most advanced trucking coordination system for large-scale deliveries.
 
-Database setup with MySQL.
-
-API development for frontend-backend communication.
-
-Payment gateway integration, KYC, and OTP verification.
-
-Phase 4: Testing & Bug Fixing (Week 7-8):
-
-User acceptance testing, debugging, and performance optimization.
-
-Phase 5: Launch & Post-Launch (End of Month 2):
-
-Deploy the website to production.
-
-Monitor performance and provide user support.
-
+---
