@@ -68,6 +68,8 @@ Users can switch their preferred language anytime from the UI.
   - Driver’s license
   - Truck image
   - License plate number
+  - Car Libre
+  - National ID front and Back
   - Selfie
 
 #### 🏢 Companies
@@ -82,7 +84,8 @@ Users can switch their preferred language anytime from the UI.
 
 #### 👷 Customers / Employers
 - Upload:
-  - National ID or Business Certificate
+  - National ID
+  - Business Certificate
   - Proof of residence
 
 > 🔒 AI-Based KYC Verification is triggered after document submission.
